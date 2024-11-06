@@ -1,4 +1,4 @@
-# Building Large Language Models from Scratch
+# Building a Large Language Model from Scratch
 
 This repository contains code, datasets, and notebooks for building, training, and experimenting with Language Models (LMs). It specifically focuses on constructing a GPT-style architecture and implementing tokenization techniques. The project is ideal for those who want hands-on experience creating foundational LLM components and experimenting with custom datasets.
 
