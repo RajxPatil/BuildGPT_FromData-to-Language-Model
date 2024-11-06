@@ -1,37 +1,62 @@
-# FreeCodeCamp - Building LLMs from Scratch
+# Building Large Language Models from Scratch
 
-## Google Colab for those who don't have a GPU: https://colab.research.google.com/drive/1_7TNpEEl8xjHlr9JzKbK5AuDKXwAkHqj?usp=sharing
+This repository contains code, datasets, and notebooks for building, training, and experimenting with Language Models (LMs). It specifically focuses on constructing a GPT-style architecture and implementing tokenization techniques. The project is ideal for those who want hands-on experience creating foundational LLM components and experimenting with custom datasets.
 
-Dependencies (assuming windows): `pip install pylzma numpy ipykernel jupyter torch --index-url https://download.pytorch.org/whl/cu118`
+## Project Overview
 
-If you don't have an NVIDIA GPU, then the `device` parameter will default to `'cpu'` since `device = 'cuda' if torch.cuda.is_available() else 'cpu'`. If device is defaulting to `'cpu'` that is fine, you will just experience slower runtimes.
+### What Is This Project?
 
-## All the links you should need are in this repo. I will add detailed explanations as questions and issues are posted.
+This project is an educational initiative to build essential components of large language models from scratch. It explores tokenization techniques like Byte-Pair Encoding (BPE) and dives into the structure and training of a simple generative pre-trained transformer (GPT) model. The project helps demystify the inner workings of LLMs by implementing core features step-by-step.
 
-## Visual Studio 2022 (for lzma compression algo) - https://visualstudio.microsoft.com/downloads/
+### How It Works
 
-## OpenWebText Download
-- https://skylion007.github.io/OpenWebTextCorpus/
-- if this doesn't work, default to the wizard of oz mini dataset for training / validation
+1. **Tokenization**: Uses BPE and bigram tokenization techniques to convert raw text data into token sequences that a neural network can process.
+2. **Model Training**: This implements a simple GPT-like model and trains it on a sample dataset (`wizard_of_oz.txt`). The training scripts (training.py and related notebooks) provide options for experimenting with model configurations, adjusting hyperparameters, and fine-tuning.
+3. **Chatbot Interface**: A chatbot (`chatbot.py`) allows interaction with the trained model. It demonstrates how LLMs generate text based on input prompts.
+4. **Data Extraction Scripts**: Scripts like `data-extract-v2.py` and `data-extract-v3.py` show how to preprocess and structure data for LLM training.
+5. **Sample Notebooks**: These contain example code to visualize model outputs, experiment with tokenization techniques, and test other NLP tasks.
 
-## Socials
-Twitter / X - https://twitter.com/elliotarledge
+### Problem It Solves
 
-My YouTube Channel - https://www.youtube.com/channel/UCjlt_l6MIdxi4KoxuMjhYxg
+The project serves as a hands-on learning tool for understanding and building LLMs. By implementing tokenization, model training, and interactive applications, users can gain insights into how LLMs process text, learn language structures and generate coherent responses. This understanding is essential for researchers and developers working on NLP tasks or custom LLMs.
 
-How to SSH from Mac to Windows - https://www.youtube.com/watch?v=7hBeAb6WyIg&t=
+## Folder Structure
 
-How to Setup Jupyter Notebooks in 5 minutes or less - https://www.youtube.com/watch?v=eLmweqU5VBA&t=
+- `bigram.ipynb`: Notebook for exploring bigram tokenization.
+- `bpe-v1.ipynb`: Notebook demonstrating Byte-Pair Encoding for tokenization.
+- `chatbot.py`: Python script to interact with the trained model in a chatbot format.
+- `data-extract-v2.py` & `data-extract-v3.py`: Scripts for processing raw text data into structured datasets.
+- `gpt-v1.ipynb` & `gpt-v2.ipynb`: Notebooks implementing and training a simple GPT model.
+- `torch-examples.ipynb`: Notebook with PyTorch examples for understanding tensors, layers, and basic operations.
+- `training.py`: Script to train the GPT model on the sample dataset.
+- `bpe_tokenizer.json`: JSON file defining the vocabulary for BPE tokenization.
+- `vocab.txt`: Vocabulary file for tokenization purposes.
+- `wizard_of_oz.txt`: Sample dataset containing text for model training.
 
-Linkedin - https://www.linkedin.com/in/elliot-arledge-a392b7243/
+## Setup and Installation
 
-Join My Discord Server - https://discord.gg/pV7ByF9VNm
+1. **Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+2. **Additional Dependencies**:
+   ```bash
+   pip install pylzma numpy ipykernel jupyter torch --index-url https://download.pytorch.org/whl/cu118
+3. **Environment**
+   Set device parameter to use cuda if a GPU is available, or default to cpu for non-GPU setups.
+   Install Visual Studio 2022 (for LZMA compression): https://visualstudio.microsoft.com/downloads/
 
-Schedule a 1-on-1: https://calendly.com/elliot-ayxc/60min
+## Running the Project
+1. **Tokenization**:
+    Run bpe-v1.ipynb or bigram.ipynb to tokenize the text data.
+2. **Model Training**:
+    Use training.py or the gpt-v1.ipynb notebook to train a basic GPT model on the tokenized data.
+3. **Chatbot Interaction**:
+   Run chatbot.py to interact with the trained model. The chatbot generates responses based on your input, showcasing the model’s text generation capabilities.
 
-## Research Papers:
-Attention is All You Need - https://arxiv.org/pdf/1706.03762.pdf
+## Resources and Further Reading
+1. Attention is All You Need: https://arxiv.org/pdf/1706.03762.pdf
+2. Survey of LLMs: https://arxiv.org/pdf/2303.18223.pdf
+3. QLoRA for Efficient LLM Finetuning: https://arxiv.org/pdf/2305.14314.pdf
 
-A Survey of LLMs - https://arxiv.org/pdf/2303.18223.pdf
 
-QLoRA: Efficient Finetuning of Quantized LLMs - https://arxiv.org/pdf/2305.14314.pdf
+
