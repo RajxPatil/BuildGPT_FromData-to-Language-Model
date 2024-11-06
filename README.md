@@ -20,6 +20,41 @@ This project is an educational initiative to build essential components of large
 
 The project serves as a hands-on learning tool for understanding and building LLMs. By implementing tokenization, model training, and interactive applications, users can gain insights into how LLMs process text, learn language structures and generate coherent responses. This understanding is essential for researchers and developers working on NLP tasks or custom LLMs.
 
+# Tech Stack
+
+Here’s a brief overview of the technologies used in this project:
+
+## Programming Language
+- Python
+
+## Deep Learning Framework
+- PyTorch
+
+## Tokenization Techniques
+- Byte-Pair Encoding (BPE)
+- Bigram
+
+## Libraries
+- NumPy
+- PyTorch
+- pylzma
+- ipykernel
+- Jupyter
+
+## Model
+- GPT-style Architecture
+
+## Development Tools
+- Jupyter Notebooks
+- Visual Studio 2022
+
+## Environment
+- CUDA (optional)
+- CPU fallback
+
+## Version Control
+- Git
+
 ## Folder Structure
 
 - `bigram.ipynb`: Notebook for exploring bigram tokenization.
