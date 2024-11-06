@@ -43,7 +43,7 @@ The project serves as a hands-on learning tool for understanding and building LL
    pip install pylzma numpy ipykernel jupyter torch --index-url https://download.pytorch.org/whl/cu118
 3. **Environment**
    Set device parameter to use cuda if a GPU is available, or default to cpu for non-GPU setups.
-   Install Visual Studio 2022 (for LZMA compression): https://visualstudio.microsoft.com/downloads/
+   Install Visual Studio 2022 (for LZMA compression): [Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 
 ## Running the Project
 1. **Tokenization**:
@@ -54,9 +54,9 @@ The project serves as a hands-on learning tool for understanding and building LL
    Run chatbot.py to interact with the trained model. The chatbot generates responses based on your input, showcasing the model’s text generation capabilities.
 
 ## Resources and Further Reading
-1. Attention is All You Need: https://arxiv.org/pdf/1706.03762.pdf
-2. Survey of LLMs: https://arxiv.org/pdf/2303.18223.pdf
-3. QLoRA for Efficient LLM Finetuning: https://arxiv.org/pdf/2305.14314.pdf
+1. Attention is All You Need: [Read the Paper](https://arxiv.org/pdf/1706.03762.pdf)
+2. Survey of LLMs: [Read the Survey](https://arxiv.org/pdf/2303.18223.pdf)
+3. QLoRA for Efficient LLM Finetuning: [Read QLoRA paper](https://arxiv.org/pdf/2305.14314.pdf)
 
 
 
